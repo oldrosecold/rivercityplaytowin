@@ -9,6 +9,8 @@
         html { scroll-behavior: smooth;
             
         }
+        .dark-mode{background-color:black;
+                   color:white;
         body {
             font-family: Georgia, 'Times New Roman', serif;
             max-width: 900px;
@@ -16,7 +18,10 @@
             padding: 20px;
             line-height: 1.5;
             color: #333;
+            background-color:white;
+            
         }
+        
 
         /* Top banner: fit to the text/content width and keep aspect ratio */
         .top-banner {
@@ -142,6 +147,7 @@
     <h1>River City Con 2026<br>Play-to-Win Games</h1>
     <p class="subtitle">Games Rated 7.0+ on BoardGameGeek &bull; Sorted by Rating</p>
     <a href="#player-count">Player Count</a>
+    <button onclick="darkMode()">Toggle dark mode</button>
 
     <div class="legend">
         <div class="legend-title">Rating Guide:</div>
@@ -814,6 +820,9 @@
         Generated January 2026 &bull; Data from BoardGameGeek.com<br>
         Ratings reflect BGG average ratings as of report generation
     </p>
+    <script>function darkMode(){var element=document.body;
+                               element.classList.toggle("dark-mode");}</script>
 
 </body>
+        
 </html>
